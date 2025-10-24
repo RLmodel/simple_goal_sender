@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>movebase_goal_sender</name>
+  <version>0.0.1</version>
+  <description>Send (x,y,yaw) goals to move_base via actionlib.</description>
+
+  <maintainer email="you@example.com">you</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>move_base_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+
+  <export/>
+</package>

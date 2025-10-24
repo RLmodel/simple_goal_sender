@@ -1,0 +1,10 @@
+<launch>
+  <arg name="x"        default="1.0"/>
+  <arg name="y"        default="2.0"/>
+  <arg name="yaw_deg"  default="90.0"/>
+  <arg name="frame"    default="map"/>
+  <arg name="timeout"  default="60.0"/>
+
+  <node pkg="movebase_goal_sender" type="send_goal.py" name="send_goal"
+        output="screen" args="$(arg x) $(arg y) $(arg yaw_deg) $(arg frame) $(arg timeout)"/>
+</launch>
